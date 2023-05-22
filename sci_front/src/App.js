@@ -15,6 +15,9 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import  MailEdit  from './Components/MailEdit';
 import MailBoxCreate from './Components/MailBoxCreate';
 import { PersonCreate } from './Components/PersonCreate';
+
+import authProvider from './Components/authProvider';
+
 // const theme = {
 //     ...defaultTheme,
 //     palette: {
@@ -23,6 +26,8 @@ import { PersonCreate } from './Components/PersonCreate';
 // };
 
 
+
+//* Changing the theme of the application  
 export const theme = {
   palette: {
     mode: 'dark',
@@ -53,7 +58,7 @@ const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 const App = () => {
   
   return (
-  <Admin theme={theme} dataProvider={restProvider('http://localhost:5000/api')} layout={MyLayout}>
+  <Admin authProvider={authProvider}  theme={theme} dataProvider={restProvider('http://localhost:3000/api')} layout={MyLayout}>
 
 
     <Resource  name='mailbox' list={MailBoxesList}  show={MailBoxDetails} edit={MailEdit} create={MailBoxCreate}   icon={EmailIcon}/>
