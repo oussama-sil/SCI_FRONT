@@ -1,0 +1,20 @@
+{
+    "mailboxes":
+    [
+        {
+            "id": 1,
+            "mailboxName": "First mailbox",
+            "nbMails": 0,
+            "isFree": 1,
+            "lastUpdate": "2023-05-21T14:29:53.000Z"
+        },
+        {
+            "id": 2,
+            "mailboxName": "Second mailbox",
+            "nbMails": 0,
+            "isFree": 1,
+            "lastUpdate": "2023-05-21T14:29:53.000Z"
+        }
+    ] 
+
+}
