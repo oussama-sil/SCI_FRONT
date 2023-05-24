@@ -78,6 +78,13 @@ export const MailBoxDetails = () => (
                 <TextField source='personID' label="OwnerID"  sx={{typography: 'body1'}}/>
             </Container>
 
+            <Container>
+                <Box sx={{ mx: 2,display: 'inline',color: 'success.main' }}>
+                Owner email : 
+                 </Box>
+                <TextField source='email' label="Owner Email"  sx={{typography: 'body1'}}/>
+            </Container>
+
         </SimpleShowLayout>
         </Box>
         

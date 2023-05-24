@@ -25,6 +25,13 @@ export const PersonCreate = () => (
 
             <Container>
                 <Box sx={{ display: 'inline',color: 'success.main'  }}>
+                    Last Name: 
+                </Box> 
+                <TextInput source="email" type="email" fullWidth label=""  color="sucess" defaultValue=""/>
+            </Container>
+
+            <Container>
+                <Box sx={{ display: 'inline',color: 'success.main'  }}>
                     Badge ID: 
                 </Box>
                 <TextInput source="badgeID"  fullWidth label=""  color="sucess" defaultValue=""/>

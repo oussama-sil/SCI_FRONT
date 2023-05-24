@@ -1,6 +1,6 @@
 import React from 'react'
 
-import  {List,Datagrid,TextField, DateField,EditButton,DeleteButton,BooleanField,ShowButton, NumberField
+import  {List,Datagrid,TextField,EmailField, DateField,EditButton,DeleteButton,BooleanField,ShowButton, NumberField
 } from 'react-admin'
 
 
@@ -16,6 +16,7 @@ function PersonsList(props) {
             <TextField source='id'label="ID" />
             <TextField source='firstname' label="First Name"/>
             <TextField source='lastname' label="Last Name" color='success'/>
+            <TextField   source='email' label="Email" color='success'/>
             <TextField source="badgeID" label="Badge ID" color='success'/>
             {/* <EditButton label='Edit' color='success' /> */}
         </Datagrid>
